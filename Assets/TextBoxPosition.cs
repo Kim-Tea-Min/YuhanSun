@@ -5,12 +5,12 @@ using UnityEngine;
 public class TextBoxPosition : MonoBehaviour
 {
     public GameObject[] TextBox; //텍스트 박스
-    public GameObject RoulletManager;
+    public CanvasController CC;
     public int div = 0; //룰렛의 분활된 면수
     // Start is called before the first frame update
     void Start()
     {
-        div = RoulletManager.GetComponent<InstantiateScript>().div;
+        div = CC.div;
         switch (div)
         {
             case 2:
