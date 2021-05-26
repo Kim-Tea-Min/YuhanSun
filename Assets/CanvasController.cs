@@ -24,7 +24,7 @@ public class CanvasController : MonoBehaviour
     public float rotationSpeed;
     public float rnd, angle; //rnd 0과 1사이의 float형 난수
     //angle : 몇번째 면에 걸릴지 + 오차(sector + rnd - 1)
-    bool act = true;
+    bool act = true; //abc
 
     // Start is called before the first frame update
     void Start()
