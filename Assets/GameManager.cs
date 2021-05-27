@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class CanvasController : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject[] canvas;
     //캔버스를 저장

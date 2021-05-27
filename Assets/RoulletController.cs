@@ -5,7 +5,7 @@ using UnityEngine;
 public class RoulletController : MonoBehaviour
 {
     private GameObject target;
-    public CanvasController CC;
+    public GameManager GM;
     //룰렛 관리도 해줘서 div랑 angle를 받아옴
     public int order = 0; //분할된 면의 div번째 면
                           //sector는 동작에 직접 관여하고 order은 관여안함
@@ -22,7 +22,7 @@ public class RoulletController : MonoBehaviour
     {
         transform.Rotate(0, 0, rotationSpeed);
         //rotationSpeed의 속도로 회전
-        rotationSpeed = CC.rotationSpeed;
+        rotationSpeed = GM.rotationSpeed;
         //CanvasController에서 rotationSpeed를 받아옴
 
 
@@ -38,7 +38,7 @@ public class RoulletController : MonoBehaviour
             }
             if (target == this.gameObject)
             {
-                CC.sector = order;
+                GM.sector = order;
                 //CanvasController의 sector에 order변수를 저장
             }
             act = false; //마우스 클릭시 함수가 더는 작동못하게 막음
