@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
        rnd = Random.Range(1.000f, 0.000f);
        //rnd : 0과 1사이의 float형 난수생성  
 
-        canvas_order = 0; //초기값 설정
+       canvas_order = 0; //초기값 설정
        canvas_num = 2;
        Canvas_changed();
 
