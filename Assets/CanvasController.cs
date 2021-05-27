@@ -8,19 +8,21 @@ public class CanvasController : MonoBehaviour
     public GameObject[] canvas;
     //캔버스를 저장
     public GameObject RoulletManager;
+    public GameObject[] input;
+    public GameObject Button_reset;
+
+    public Text[] set_text;
+    public Text[] get_text;
+    public Text text_res;
+
+    public string[] text = new string[8];
     public int canvas_order;
     //캔버스가 나오는 순서
     public int canvas_num;
     //캔버스의 총 갯수
-    
-    public InstantiateScript Ins;
-    public GameObject[] input;
-    public GameObject Button_reset;
-    public Text[] set_text;
-    public Text[] get_text;
     public int div, sector;
-    public string[] text = new string[8];
-    public Text text_res;
+    
+    
     public float rotationSpeed;
     public float rnd, angle; //rnd 0과 1사이의 float형 난수
     //angle : 몇번째 면에 걸릴지 + 오차(sector + rnd - 1)
@@ -30,11 +32,11 @@ public class CanvasController : MonoBehaviour
     void Start()
     {
        Button_reset.SetActive(false);
-       div = GameManager.numeber;
+       div = NumberCounter.numeber;
        act = true;
 
        rnd = Random.Range(1.000f, 0.000f);
-       //rnd 0과 1사이의 float형 난수생성  
+       //rnd : 0과 1사이의 float형 난수생성  
 
         canvas_order = 0; //초기값 설정
        canvas_num = 2;
@@ -98,7 +100,7 @@ public class CanvasController : MonoBehaviour
         }
     }
 
-    public void Canvas_changed() //다음캔버스로 넘어가는 함수
+    public void Canvas_changed() //다음 캔버스로 넘어가는 함수
     {
         if (canvas_order <= canvas_num) canvas_order++; //다음 캔버스로
         for (int i = 1; i <= canvas_num; i++)

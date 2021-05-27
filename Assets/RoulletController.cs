@@ -5,21 +5,16 @@ using UnityEngine;
 public class RoulletController : MonoBehaviour
 {
     private GameObject target;
-    public GameObject RoulletManager; //룰렛을 완성시켜주는 오브젝트
     public CanvasController CC;
     //룰렛 관리도 해줘서 div랑 angle를 받아옴
+    public int order = 0; //분할된 면의 div번째 면
+                          //sector는 동작에 직접 관여하고 order은 관여안함
     public float rotationSpeed; //회전속도
     bool act = true; //함수를 동작시킬 지
-    public int div = 0;//분할된 면의 수
-    public int sector, order= 0; //분할된 면의 div번째 면
-    //sector는 동작에 직접 관여하고 order은 관여안함
-    public float angle = 0; //몇번째 면에 걸리는지 보기 편하려구 만든 변수
-    //angle : 몇번째  div에 걸릴지 + 오차
+
     void Start()
     {
         act = true;
-        div = CC.div;
-        //CanvasController에서 div변수 받아옴
     }
 
     // Update is called once per frame
@@ -44,7 +39,7 @@ public class RoulletController : MonoBehaviour
             if (target == this.gameObject)
             {
                 CC.sector = order;
-                //RoulletManager의 sector에 order변수를 저장
+                //CanvasController의 sector에 order변수를 저장
             }
             act = false; //마우스 클릭시 함수가 더는 작동못하게 막음
         }

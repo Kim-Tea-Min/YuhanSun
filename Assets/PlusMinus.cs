@@ -53,10 +53,8 @@ public class PlusMinus : MonoBehaviour
   }
   public void OnClick()
   {
-
-
     SceneManager.LoadScene("ThirdScene");
-    GameManager.numeber = nextnumber;
+    NumberCounter.numeber = nextnumber;
   }
 
   // Update is called once per frame

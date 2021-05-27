@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class InstantiateScript : MonoBehaviour
 {
-    public GameObject[] prefab_24; //복제본을 저장
-    public GameObject[] prefab_35; //복제본을 저장
+    public GameObject[] prefab_24;
+    //24분원의 복제본을 만들어서 저장하는 오브젝트
+    public GameObject[] prefab_35;
+    //35분원의 복제본을 만들어서 저장하는 오브젝트
     int order = 0;  //원판의 분할된 면의 제작순서
     int bt = 0;  //룰렛을 구성하는 부채꼴의 수
     public int div; //div : 총 분할할 면의 수

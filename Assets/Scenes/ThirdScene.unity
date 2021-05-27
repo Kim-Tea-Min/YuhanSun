@@ -497,13 +497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &55952692
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,9 +758,6 @@ MonoBehaviour:
   - {fileID: 1503597355}
   - {fileID: 311524297}
   RoulletManager: {fileID: 565380855}
-  canvas_order: 0
-  canvas_num: 0
-  Ins: {fileID: 565380856}
   input:
   - {fileID: 1529094977}
   - {fileID: 1346272064}
@@ -793,8 +786,7 @@ MonoBehaviour:
   - {fileID: 969070712}
   - {fileID: 1025085628}
   - {fileID: 512880403}
-  div: 0
-  sector: 0
+  text_res: {fileID: 1053876242}
   text:
   - 
   - 
@@ -804,7 +796,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  text_res: {fileID: 1053876242}
+  canvas_order: 0
+  canvas_num: 0
+  div: 0
+  sector: 0
   rotationSpeed: 0
   rnd: 0
   angle: 0
@@ -902,25 +897,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!224 &154081003
-RectTransform:
+--- !u!4 &154081003
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154081001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 225, z: 0}
   m_LocalScale: {x: 15, y: 15, z: 0}
   m_Children: []
   m_Father: {fileID: 311524301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 225}
-  m_SizeDelta: {x: 4, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &220610343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,13 +1048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &260367843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,8 +1292,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &308535479
-RectTransform:
+--- !u!4 &308535479
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1320,11 +1306,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &308535480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1388,13 +1369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &308535482
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1656,7 +1633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334164920
@@ -1951,8 +1928,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &423242658
-RectTransform:
+--- !u!4 &423242658
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1965,11 +1942,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &423242659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2033,13 +2005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &423242661
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2218,13 +2186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &512880401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,15 +2450,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!224 &565380858
-RectTransform:
+--- !u!4 &565380858
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565380855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1952528879}
@@ -2515,11 +2479,6 @@ RectTransform:
   m_Father: {fileID: 311524301}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &647411910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,7 +2748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694632350
@@ -2980,13 +2939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &729812933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,8 +2961,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &729812934
-RectTransform:
+--- !u!4 &729812934
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3020,11 +2975,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &729812935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3088,13 +3038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &729812937
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3473,7 +3419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &843315326
@@ -3706,7 +3652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938123682
@@ -4256,13 +4202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &1239554096
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4340,7 +4282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305975984
@@ -4717,13 +4659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &1426891316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,7 +4777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447296513
@@ -5109,13 +5047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &1503597355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,13 +5433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!1 &1569644850
 GameObject:
   m_ObjectHideFlags: 0
@@ -5542,7 +5472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569644852
@@ -6704,8 +6634,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!224 &1952528879
-RectTransform:
+--- !u!4 &1952528879
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6718,11 +6648,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952528880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6735,13 +6660,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &1952528881
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6802,8 +6723,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1974665682
-RectTransform:
+--- !u!4 &1974665682
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6816,11 +6737,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1974665683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6884,13 +6800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &1974665685
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7006,7 +6918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 360, y: 590}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027821847
@@ -7041,8 +6953,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2066726107
-RectTransform:
+--- !u!4 &2066726107
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7055,11 +6967,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2066726108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7123,13 +7030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &2066726110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7402,8 +7305,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2122969194
-RectTransform:
+--- !u!4 &2122969194
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7416,11 +7319,6 @@ RectTransform:
   m_Father: {fileID: 565380858}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.38, y: 5.02}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2122969195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7484,13 +7382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed4087590bf92b4496674c1adf33fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoulletManager: {fileID: 565380855}
   CC: {fileID: 135284498}
-  rotationSpeed: 0
-  div: 0
-  sector: 0
   order: 0
-  angle: 0
+  rotationSpeed: 0
 --- !u!60 &2122969197
 PolygonCollider2D:
   m_ObjectHideFlags: 0
