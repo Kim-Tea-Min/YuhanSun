@@ -79,7 +79,7 @@ public class PlusMinus : MonoBehaviour
         {
             PlusButton.SetActive(true);
         }
-
+        NumberCounter.numeber = score;
 
     }
 

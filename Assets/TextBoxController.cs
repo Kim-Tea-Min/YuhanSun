@@ -20,7 +20,7 @@ public class TextBoxController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(new Vector3(360, 610, 0), Vector3.forward, rotationSpeed);
+        transform.RotateAround(new Vector3(360, 540, 0), Vector3.forward, rotationSpeed);
         //(360, 730, 0)을 중심으로 forward방향에 rotationSpeed의 속도로 공전;       
         rotationSpeed = GM.rotationSpeed;
         //CanvasController에서 rotationSpeed를 받아옴

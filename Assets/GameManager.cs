@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     
     
     public float rotationSpeed;
-    public float rnd, angle; //rnd 0과 1사이의 float형 난수
+    public float rnd, rnd_2, angle; //rnd 0과 1사이의 float형 난수
     //angle : 몇번째 면에 걸릴지 + 오차(sector + rnd - 1)
     bool act = true; //abc
 
@@ -36,9 +36,10 @@ public class GameManager : MonoBehaviour
        act = true;
 
        rnd = Random.Range(1.000f, 0.000f);
-       //rnd : 0과 1사이의 float형 난수생성  
+       rnd_2 = (int)Random.Range(3.000f, 5.000f);
+        //rnd : 0과 1사이의 float형 난수생성  
 
-       canvas_order = 0; //초기값 설정
+        canvas_order = 0; //초기값 설정
        canvas_num = 2;
        Canvas_changed();
 
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
     {
         angle = sector + rnd - 1; ;
         //RoulletManager에서 angle변수 받아옴
-        rotationSpeed *= 1 - 0.01f * div / (div + angle);
+        rotationSpeed *= 1 - 0.1f * div / (2*rnd_2*div + angle);
         //일주후 order*(360도/div)만큼 추가로 이동(order : div의 순서)
 
         for (int i = div; i < get_text.Length; i++)
@@ -93,7 +94,7 @@ public class GameManager : MonoBehaviour
         {
             if (act)
             {
-                rotationSpeed = 3.6f; //회전속도 3.6도
+                rotationSpeed = 36f; //회전속도 3.6도
                 act = false; //마우스 클릭시 함수가 한번만 동작하게 함
             }
             

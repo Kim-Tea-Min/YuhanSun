@@ -16,6 +16,8 @@ public class BackGroundController : MonoBehaviour
     void Start()
     {
         smile_pos = smile.transform.position;
+        moveSpeed = 0.3f;
+        rotationSpeed = 0.2f;
     }
 
     // Update is called once per frame
